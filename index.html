@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yamuna Vihar</title>
     <link href="school.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <style>
         /* Your existing CSS styles */
@@ -19,6 +20,62 @@
             display: inline-block;
         }
     </style>
+    <title>Updates Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #updates-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 999;
+        }
+
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #555;
+        }
+    </style>
+
+    <div id="updates-container">
+        <div id="close-button" onclick="closeUpdates()">X</div>
+        <h2>Latest Updates</h2>
+        <p>Guidelines for Admission in Dr. B. R. Ambedkar Schools of Specialised Excellence affiliated with the Delhi
+            Board of School Education (DBSE)-Session 2024 25 in class 9th and class 11th.</p>
+        <!-- Add your updates content here -->
+    </div>
+
+    <!-- Add a button or trigger to display updates -->
+    <button onclick="showUpdates()">Show Updates</button>
+
+    <script>
+        function showUpdates() {
+            var updatesContainer = document.getElementById('updates-container');
+            updatesContainer.style.display = 'block';
+        }
+
+        function closeUpdates() {
+            var updatesContainer = document.getElementById('updates-container');
+            updatesContainer.style.display = 'none';
+        }
+    </script>
+    <script>
+
+    </script>
 </head>
 <!-- Add the chatbox HTML -->
 <div id="chatbox">
@@ -38,39 +95,54 @@
             <marquee scrollamount="20"><span style="font-size: 40px;">Dr. B.R. Ambedkar, YamunaVihar(1104488)</span>
             </marquee>
         </div>
+        
         <div id="nav" class="col-lg-2 col-md-6 footer-links">
             <div style="display: flex; align-items: center; justify-content: space-between;">
                 <center>
-                <img src="sose.png" alt="Left Image" style="max-width: 200px; max-height: 200px; align-self: flex-start;">
-            </center>
+                    <img src="sose.png" alt="Left Image"
+                        style="max-width: 200px; max-height: 200px; align-self: flex-start;">
+                </center>
                 <ul>
+                    <!-- Add your existing navigation links here -->
                     <li><a href="#">Collegial</a></li>
                     <li><a href="annoucement.html" target="_blank" id="announcement">Announcement</a></li>
                     <li><a href="main Events.html" target="_blank" id="mainEvents">Main Events</a></li>
                     <li><a href="experience.html" target="_blank" id="experience">Experience</a></li>
                 </ul>
-               <center>
-                <img src="logo_emp-removebg-preview.png" alt="Right Image" style="max-width: 200px; max-height: 200px; align-self: flex-end;">
-            </center>
+                <!-- Add social media icons here -->
+
+                <center>
+                    <img src="logo_emp-removebg-preview.png" alt="Right Image"
+                        style="max-width: 200px; max-height: 200px; align-self: flex-end;">
+                </center>
+                <div id="social-icons">
+                    <a href="" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
             </div>
         </div>
-        
+
         <div id="content">
             <div style="text-align: center;">
-                <img src="WhatsApp Image 2023-11-28 at 4.55.55 PM.jpeg" alt="Left Image" style="width: 35%; height: 250px; margin-right: 20px; display: inline-block;">
-            
-                <img src="khalid sir.jpeg" alt="Centered Image" style="width: 35%; height: 250px; display: inline-block;">
-                <img src="post.jpeg" alt="Right Image" style="width: 35%; height: 250px; margin-left: 20px; display: inline-block;">
+                <img src="WhatsApp Image 2023-11-28 at 4.55.55 PM.jpeg" alt="Left Image"
+                    style="width: 35%; height: 250px; margin-right: 20px; display: inline-block;">
+
+                <img src="khalid sir.jpeg" alt="Centered Image"
+                    style="width: 35%; height: 250px; display: inline-block;">
+                <img src="post.jpeg" alt="Right Image"
+                    style="width: 35%; height: 250px; margin-left: 20px; display: inline-block;">
             </div>
             <h2><a href="https://en.wikipedia.org/wiki/Yamuna_Vihar" target="_blank"> SoSE Yamuna Vihar, Delhi</a></h2>
 
             <h3> SoSE Provides 6 Skills</h3>
             <ul>
-                <li><b>Media And Design</b> </li>
-                <li><b>Finance & Accounting</b> </li>
+                <li><b>Coding </b> </li>
+                <li><b>Digital Media and Design </b> </li>
                 <li><b>Electro Mechanical Production</b> </li>
                 <li> <b>Fashion & Asthetics</b> </li>
-                <li><b>Coding</b> </li>
+                <li><b>Finance and Accounting</b> </li>
                 <li><b>Robotics & Automation</b> </li>
             </ul>
 
@@ -84,44 +156,58 @@
                 elements.
             </p>
 
-            <h3>2) IMPORTANCE OF EMP </h3>
+            <h3>3) What is Studied? </h3>
+            <p>Ans.In grades 9 and 10, there are six taster courses being offered by HE-21 schools under two subject
+                areas. Taster courses offer students the opportunity to explore different types of specialisations under
+                two subjects areas:
+
+                (i) Advanced Technologies: Through ‘Advanced Technologies’, students explore subjects such as Coding,
+                Robotics and Automation, and Electromechanical Production.
+
+                (ii) Design & Commerce: Through ‘Design & Commerce’, students explore subjects such as Digital Media &
+                Design, Fashion Design & Aesthetics, and Finance & Accounting..</p>
+            <h3>4) IMPORTANCE OF EMP </h3>
             <p>Ans.Electro-Mechanical Technology (or mechatronics) is one of the most in-demand and highly sought-after
                 careers
                 in the manufacturing industry. The combination of electrical and mechanical skills based on
                 computer-aided
                 drafting, and machine technology creates a unique blend of knowledge desirable to the industry.</p>
 
-            <h3>3) USE OF EMP IN OUR DAILY LIFE </h3>
+            <h3>5) USE OF EMP IN OUR DAILY LIFE </h3>
             <p>Ans.•It is used to move objects, create conveniences, and help us achieve what we cannot do with human
                 power
                 alone. From hydropower to wind power to the machines that make the machines that generate electricity,
                 mechanical energy is not only present but it's the driving force</p>
 
-            <h3>4) WHY IS EMP PRESENT IN OUR COURSE </h3>
+            <h3>6) WHY IS EMP PRESENT IN OUR COURSE </h3>
             <p>•Electro-Mechanical Technology (or mechatronics) is one of the most in-demand
                 and highly sought-after careers in the manufacturing industry. The combination of
                 electrical and mechanical skills based on computer-aided drafting, and machine
                 technology creates a unique blend of
                 knowledge desirable to the industry.</p>
+            <h3>7) How does EMP Concepts blend engineering? </h3>
+            <p>•EMP merges electrical and mechanical knowledge, exploring modern machines and their components for a
+                holistic understanding in engineering..</p>
+
         </div>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 // Show a pop-up message when the page loads
-                window.alert("Welcome to EMP Concepts, where electrical and mechanical engineering converge for an immersive learning experience. I'm Shorya, your guide on this exciting journey into the heart of modern machines. At EMP, we're dedicated to empowering students with the crucial knowledge and skills for dynamic fields. Our curriculum delves deep into machine intricacies, unraveling the synergy of micro-controllers, sensors, and more. Join us in building a strong foundation in electro-mechanical production, where innovation sparks, and skills thrive. Let's explore the future of technology together, one concept at a time!");
-    
+                window.alert("Hello, I'm Shorya from 9A, your guide at EMP Concepts. Join me on an exciting journey into the heart of electro-mechanical production. Let's explore the synergy of electrical and mechanical engineering, unraveling the secrets of modern machines. Together, we'll build a strong foundation for innovation and skills. Welcome to EMP, where knowledge thrives!");
+
                 // Show the overlay when the alert is closed
                 var overlay = document.getElementById('overlay');
                 overlay.style.display = 'flex';
-    
+
                 // Close the overlay when the close button is clicked
                 var closeButton = document.getElementById('close-btn');
                 closeButton.addEventListener('click', function () {
                     overlay.style.display = 'none';
                 });
             });
-            
+
         </script>
-    
+
 
         <head>
             <!-- Your existing head content -->
@@ -131,17 +217,17 @@
                 #header {
                     text-align: center;
                 }
-        
+
                 #header img {
                     margin: 0;
                     display: inline-block;
                 }
-        
+
                 /* Add styles for the swiper container */
                 .swiper-container {
                     position: relative;
                 }
-        
+
                 /* Position the navigation and pagination at the bottom */
                 .swiper-pagination,
                 .swiper-button-next,
@@ -149,139 +235,145 @@
                     position: absolute;
                     bottom: 10px;
                 }
-        
+
                 .swiper-button-next,
                 .swiper-button-prev {
                     top: auto;
                 }
             </style>
         </head>
-   ,<head>
-    <!DOCTYPE html>
-<html lang="en">
+        ,
 
-<head>
-    <!-- Your existing head content -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <style>
-        /* Your existing CSS styles */
-        #header {
-            text-align: center;
-        }
+        <head>
+            <!DOCTYPE html>
+            <html lang="en">
 
-        #header img {
-            margin: 0;
-            display: inline-block;
-        }
+            <head>
+                <!-- Your existing head content -->
+                <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+                <style>
+                    /* Your existing CSS styles */
+                    #header {
+                        text-align: center;
+                    }
 
-        /* Add styles for the swiper container */
-        .swiper-container {
-            position: relative;
-            width: 100%;
-            height: 250px; /* Adjust the height as needed */
-            overflow: hidden; /* Hide content overflow */
-        }
+                    #header img {
+                        margin: 0;
+                        display: inline-block;
+                    }
 
-        .swiper-slide {
-            text-align: center;
-        }
+                    /* Add styles for the swiper container */
+                    .swiper-container {
+                        position: relative;
+                        width: 100%;
+                        height: 250px;
+                        /* Adjust the height as needed */
+                        overflow: hidden;
+                        /* Hide content overflow */
+                    }
 
-        /* Position the navigation and pagination at the bottom */
-        .swiper-pagination,
-        .swiper-button-next,
-        .swiper-button-prev {
-            position: absolute;
-            bottom: 10px;
-        }
+                    .swiper-slide {
+                        text-align: center;
+                    }
 
-        .swiper-button-next,
-        .swiper-button-prev {
-            top: auto;
-        }
+                    /* Position the navigation and pagination at the bottom */
+                    .swiper-pagination,
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        position: absolute;
+                        bottom: 10px;
+                    }
 
-        /* Hide the horizontal scrollbar */
-        html,
-        body {
-            overflow-x: hidden;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        top: auto;
+                    }
 
-        /* Ensure content is responsive */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-            overflow-x: hidden;
-        }
-    </style>
-</head>
+                    /* Hide the horizontal scrollbar */
+                    html,
+                    body {
+                        overflow-x: hidden;
+                        margin: 0;
+                        padding: 0;
+                        height: 100%;
+                    }
 
-<body>
-    <div id="wrapper">
-        <!-- Your existing content -->
-    </div>
+                    /* Ensure content is responsive */
+                    body {
+                        margin: 0;
+                        padding: 0;
+                        font-family: Arial, sans-serif;
+                        font-size: 16px;
+                        line-height: 1.6;
+                        color: #333;
+                        background-color: #f4f4f4;
+                        overflow-x: hidden;
+                    }
+                </style>
+            </head>
 
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <center>
-                    <img src="WhatsApp Image 2023-11-28 at 4.55.55 PM.jpeg" alt="Image 1" style="width: 50%; height: 250px;">
-                </center>
+        <body>
+            <div id="wrapper">
+                <!-- Your existing content -->
             </div>
-            <div class="swiper-slide">
-                <center>
-                    <img src="khalid sir.jpeg" alt="Image 2" style="width: 50%; height: 250px;">
-                </center>
-            </div>
-            <div class="swiper-slide">
-                <center>
-                    <img src="post.jpeg" alt="Image 3" style="width: 45%; height: 250px;">
-                </center>
-            </div>
-            <!-- Add more slides as needed -->
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            slidesPerGroup: 1, // Show one slide at a time
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            freeMode: false, // Disable free mode to ensure only one slide is visible at a time
-            loop: false,     // Disable loop if you don't want the slides to wrap
-        });
-    </script>
-</body>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <center>
+                            <img src="WhatsApp Image 2023-11-28 at 4.55.55 PM.jpeg" alt="Image 1"
+                                style="width: 50%; height: 275px;">
+                        </center>
+                    </div>
+                    <div class="swiper-slide">
+                        <center>
+                            <img src="khalid sir.jpeg" alt="Image 2" style="width: 50%; height: 250px;">
+                        </center>
+                    </div>
+                    <div class="swiper-slide">
+                        <center>
+                            <img src="post.jpeg" alt="Image 3" style="width: 45%; height: 250px;">
+                        </center>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1, // Show one slide at a time
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    freeMode: false, // Disable free mode to ensure only one slide is visible at a time
+                    loop: false,     // Disable loop if you don't want the slides to wrap
+                });
+            </script>
+        </body>
 
 </html>
 
-   </head>     
-        <body>
-            <!-- Your existing body content -->      
+</head>
+
+<body>
+    <!-- Your existing body content -->
     <div id="developers">
         <p>Website Controlled by :</p>
-        <h4 style="display: inline;">By Shorya 9 A(SoSE)</h4><img class="developer" src="unnamed.png" width="50px"
-            style="margin-right: 60px;" height="50px">
+        <h4 style="display: inline;">By Shorya 9 A(SoSE)</h4><img class="developer" src="shorya photo.jpg" width="60px"
+            style="margin-right: 90px;" height="50px">
     </div>
 
 </body>
