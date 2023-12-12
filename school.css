@@ -4,7 +4,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(209, 23, 23), 0.116);
+  background-color: rgb(209, 23, 23, 0.116);
   font-family: Arial, sans-serif;
 }
 
@@ -16,15 +16,16 @@ html, body {
 }
 
 #header img {
-  width: 50px;
+  width: 150px;
+  padding: 0.00001px;
 }
 marquee {
   background-color:rgb(44, 166, 214);
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 15px;
     color: white;
     font-family: sans-serif;
-    padding: 5px;
+    padding: 10px;
    } 
 /* Navigation Styles */
 #nav {
@@ -97,8 +98,8 @@ body {
 
 #header {
   text-align: center;
-  padding: 10px;
-  background-color: #333;
+  padding: 1px;
+  background-color: #f8f6f6;
   color: white;
 }
 
@@ -146,9 +147,92 @@ body {
 
 #developers {
   text-align: center;
-  padding: 10px;
-  background-color: #333;
+  padding: 0.0000000000000000000005px;
+  background-color: #252525;
   color: white;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#updates-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 999;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+#close-button:hover {
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  font-size: 58px;
+  margin-bottom: 40px;
+}
+
+p {
+  color: #000000;
+  line-height: 1.8;
+}
+
+/* Add animation for a creative entrance effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#updates-container.show {
+  animation: fadeIn 0.8s ease forwards;
+}
+#social-icons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#social-icons a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #000000; /* Adjust the color as needed */
+}
+
+#social-icons i {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-right: 5px; /* Adjust the spacing between icon and text as needed */
 }
 
 /* Add more styles as needed */
